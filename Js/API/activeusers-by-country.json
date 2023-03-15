@@ -1,0 +1,51 @@
+{
+  "totalUsers": 550,
+  "countries": [
+    {
+      "country": "India",
+      "activeUsers": 120,
+      "percent": 45.82
+    },
+    {
+      "country": "United Kingdom",
+      "activeUsers": 40,
+      "percent": 35.27
+    },
+    {
+      "country": "United States",
+      "activeUsers": 30,
+      "percent": 45.45
+    },
+    {
+      "country": "Australia",
+      "activeUsers": 10,
+      "percent": 31.82
+    },
+    {
+      "country": "South Africa",
+      "activeUsers": 60,
+      "percent": 39.91
+    },
+    {
+      "country": "Singapore",
+      "activeUsers": 80,
+      "percent": 35.55
+    },
+    {
+      "country": "Canada",
+      "activeUsers": 50,
+      "percent": 9.09
+    },
+    {
+      "country": "New Zealand",
+      "activeUsers": 60,
+      "percent": 10.91
+    },
+
+    {
+      "country": "Singapore",
+      "activeUsers": 90,
+      "percent": 16.36
+    }
+  ]
+}

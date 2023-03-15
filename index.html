@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Style/style.css" />
+    <link rel="stylesheet" href="/Style/Responsive.css" />
+    <title>WIS</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="links">
+        <img src="assets/WIS-full.svg" alt="" />
+        <ul>
+          <li><a href="#" style="font-weight: 700">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="tasks.html">Tasks</a></li>
+          <li><a href="reporting.html">Reporting</a></li>
+          <li><a href="users.html">Users</a></li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <button class="settings">
+          <img
+            src="assets/polygon.svg"
+            alt=""
+            class="upgrade-icon"
+            style="margin-left: 10px"
+          />Upgrade now
+        </button>
+        <button class="icons">
+          <img src="assets/settings-icon.svg" alt="" />
+        </button>
+        <button class="icons bell"><img src="assets/bell.svg" alt="" /></button>
+        <img class="user" src="assets/pic.svg" alt="" />
+      </div>
+    </nav>
+    <section class="container">
+      <div class="side-bar">
+        <ul>
+          <li>Overview</li>
+          <li>Reports</li>
+          <li>Saved Reports</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+      <div class="right-side-bar">
+        <div class="main-div">
+          <div class="message">
+            <div class="message-text">
+              <div class="message-text-greet">Welcome back, Willem</div>
+            </div>
+            <div class="message-buttons">
+              <button class="export">
+                <img src="assets/export-icon.svg" alt="" /> Export
+              </button>
+              <button class="insights">Insights</button>
+            </div>
+          </div>
+          <div class="message-text-info" style="color: #000">
+            Messure your advertising ROI and track and report website traffic
+          </div>
+        </div>
+        <div class="button-group">
+          <div class="small-buttons">
+            <div class="sm-btn-grp">
+              <button class="sm-btn sm-btn-1">12M</button>
+              <button class="sm-btn sm-btn-2">30D</button>
+              <button class="sm-btn sm-btn-3">7D</button>
+              <button class="sm-btn sm-btn-4">24H</button>
+            </div>
+          </div>
+          <div class="large-buttons">
+            <button class="large-btn lg-btn-1">Select Dates</button>
+            <button class="large-btn lg-btn-2" id="filterButton">
+              Filters
+            </button>
+          </div>
+        </div>
+        <div class="session-info-section">
+          <div class="grid-secton">
+            <div class="loader"></div>
+            <div class="information-container">
+              <div class="heading">
+                <div class="heading-text">Users</div>
+                <div class="heading-icon">
+                  <img src="assets/ic-action-more-vert-24.svg" alt="" />
+                </div>
+              </div>
+              <div class="data">
+                <div class="data-value">
+                  <div class="data-value-main user-count">20.8k</div>
+                  <div class="data-value-elapse">
+                    <span class="data-up-arrow"
+                      ><img
+                        src="assets/upArrow.svg"
+                        alt=""
+                        class="user-arrow arrow-svg" /></span
+                    ><span class="data-percent user-data-percent">12%</span> vs
+                    last month
+                  </div>
+                </div>
+                <div class="data-graph">
+                  <div id="container-area-graph-up"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-secton">
+            <div class="loader"></div>
+            <div class="information-container">
+              <div class="heading">
+                <div class="heading-text">Sessions</div>
+                <div class="heading-icon">
+                  <img src="assets/ic-action-more-vert-24.svg" alt="" />
+                </div>
+              </div>
+              <div class="data">
+                <div class="data-value">
+                  <div class="data-value-main main-sessions">21.5k</div>
+                  <div class="data-value-elapse">
+                    <span class="data-up-arrow"
+                      ><img
+                        src="assets/downArrow.svg"
+                        alt=""
+                        class="sessions-arrow arrow-svg" /></span
+                    ><span
+                      class="data-percent session-percent"
+                      style="color: #b00020"
+                      >2%</span
+                    >
+                    vs last month
+                  </div>
+                </div>
+                <div class="data-graph">
+                  <div id="container-area-graph-down"></div>
+                  <!-- <img src="assets/Group 794236.svg" alt="" /> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-secton">
+            <div class="loader"></div>
+            <div class="information-container">
+              <div class="heading">
+                <div class="heading-text">Session Duration</div>
+                <div class="heading-icon">
+                  <img src="assets/ic-action-more-vert-24.svg" alt="" />
+                </div>
+              </div>
+              <div class="data">
+                <div class="data-value">
+                  <div class="data-value-main session-duration">3m 52s</div>
+                  <div class="data-value-elapse">
+                    <span class="data-up-arrow"
+                      ><img
+                        src="assets/upArrow.svg"
+                        alt=""
+                        class="duration-arrow arrow-svg" /></span
+                    ><span class="data-percent session-duration-percent"
+                      >9%</span
+                    >
+                    vs last month
+                  </div>
+                </div>
+                <div class="data-graph">
+                  <div id="container-area-graph-up-up"></div>
+                  <!-- <img src="assets/Group 794236.svg" alt="" /> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--active users section starts here-->
+        <div class="active-users">
+          <div class="active-users-heading">
+            <div class="active-users-heading-text">Active users right now</div>
+            <div class="active-users-heading-button">
+              <button class="real-time-report">Real Time Report</button>
+            </div>
+          </div>
+          <div class="map-data">
+            <div class="world-map">
+              <div id="map-container"></div>
+            </div>
+            <div class="country-data">
+              <div class="total-users"></div>
+              <div class="countries"></div>
+            </div>
+          </div>
+        </div>
+        <!--active users section ends here-->
+        <!-- How do you accquire users? starts here -->
+        <div class="pie-chart-section">
+          <div class="pie-chart-heading-div">
+            <h2 class="pie-chart-section-heading">
+              How do you accquire users?
+            </h2>
+            <button class="loc-report">Location Report</button>
+          </div>
+          <div class="pie-chart-main-div">
+            <div class="bar-chart">
+              <div id="container" style="width: 700px; height: 200px"></div>
+            </div>
+            <div class="pie-charts">
+              <div class="pie-chart">
+                <div id="pie-chart-container"></div>
+              </div>
+              <div class="pie-chart-data">
+                <ul>
+                  <li class="list-group list-group-1">Organic</li>
+                  <li class="list-group list-group-2">Direct</li>
+                  <li class="list-group list-group-3">Referral</li>
+                  <li class="list-group list-group-4">Social</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--pie-chart-main-div ends-->
+        </div>
+        <!-- How do you accquire users? ends here -->
+      </div>
+      <!--Right side bar end's here-->
+    </section>
+
+    <!-- Script tags -->
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/mapdata/index.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="https://www.highcharts.com/samples/static/jquery.combobox.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script type="module" src="/Js/index.js"></script>
+  </body>
+</html>

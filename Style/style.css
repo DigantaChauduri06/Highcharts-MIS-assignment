@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@600;700;800&display=swap");
+/* Local Imports */
+@import url("./Global.css");
+@import url("./Components/Navbar.css");
+@import url("./Components/Sidebar.css");
+@import url("./Components/Main-div.css");
+@import url("./Components/Session-info.css");
+@import url("./Components/Active-Users/Active-users.css");
+@import url("./Components/Filters.css");
+@import url("./Components/Pie-Chart.css");
